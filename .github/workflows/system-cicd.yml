@@ -34,6 +34,13 @@ jobs:
           repository: attestify/rover-medical-evidence-collection
           path: rover-medical-evidence-collection
 
+      - name: Show evidence collection repo structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Contents of rover-medical-evidence-collection:"
+          tree rover-medical-evidence-collection -L 5
+
       - name: Resolve release
         id: rel
         uses: ./.github/actions/determine-release
