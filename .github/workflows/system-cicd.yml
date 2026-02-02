@@ -90,6 +90,12 @@ jobs:
           echo "=== Workspace top level ==="
           tree -L 8 "${GITHUB_WORKSPACE}"
 
+          echo "=== Workspace top level -1 ==="
+          tree -L 9 "/home/runner/work/rover-medical-system"
+
+          echo "=== Workspace top level -1 ==="
+          tree -L 10 "/home/runner/work"
+
       - name: NAPE - Start Evidence Collection
         shell: bash
         run: |
