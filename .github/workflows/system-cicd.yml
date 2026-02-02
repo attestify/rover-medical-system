@@ -4,17 +4,6 @@ on:
   push:
     branches: ["main"]
 
-  workflow_dispatch:
-    inputs:
-      release:
-        description: "Demo release to run (release-1, release-2, release-3...)"
-        required: true
-        default: "release-1"
-      nape_version:
-        description: "NAPE CLI version to install"
-        required: false
-        default: 1.1.0
-
 jobs:
   assured_release:
     runs-on: ubuntu-latest
