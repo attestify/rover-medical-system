@@ -87,6 +87,16 @@ jobs:
             -e "release=${RELEASE}" \
             -e "rover_system_root=${GITHUB_WORKSPACE}/rover-medical-system"
 
+
+          echo "=== Workspace top level ==="
+          tree -L 6 "${GITHUB_WORKSPACE}"
+
+          echo "=== Rover medical system (where evidence should land) ==="
+          tree -L 8 "${GITHUB_WORKSPACE}/rover-medical-system/${RELEASE}" || true
+
+          echo "=== Runtime evidence output ==="
+          tree -L 8 "${GITHUB_WORKSPACE}/rover-medical-system/${RELEASE}/evidence/runtime" || true
+
       - name: NAPE - Start Evidence Collection
         shell: bash
         run: |
