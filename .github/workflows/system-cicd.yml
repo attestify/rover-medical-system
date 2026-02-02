@@ -3,6 +3,7 @@ name: Rover Medical System - CI/CD
 on:
   push:
     branches: ["main"]
+  worflow_dispatch:
 
 jobs:
   assured_release:
