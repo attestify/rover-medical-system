@@ -103,7 +103,7 @@ jobs:
 
           echo "--- Release 3 - Evidence Collection (Additions) --- "
 
-         nape collect evidence \
+          nape collect evidence \
           --control-activity "pet-medicine-host" \
           --file-path "pet-medicine-host/stdout-auditctl-installed.txt"
 
@@ -142,12 +142,13 @@ jobs:
           nape collect evidence \
           --control-activity "rover-cloud" \
           --file-path "rover-cloud/cloud-config.yaml"
-          
+
           nape collect evidence \
           --control-activity "rover-cloud" \
           --file-path "rover-cloud/soc1-report-analysis.json"
 
           nape collect report
+
 
       - name: Upload NAPE run directory
         uses: actions/upload-artifact@v4
