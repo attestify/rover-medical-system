@@ -1,4 +1,4 @@
-name: Determine Current Release Njmber
+name: Determine Current Release Number
 description: Read the RELEASE file and export RELEASE=release-<n> to the GitHub Actions environment.
 
 inputs:

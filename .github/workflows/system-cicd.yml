@@ -3,7 +3,13 @@ name: Rover Medical System - CI/CD
 on:
   push:
     branches: ["main"]
-  worflow_dispatch:
+
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Demo release to run (release-1, release-2, release-3...)"
+        required: false
+        default: "release-1"
 
 jobs:
   assured_release:
@@ -11,7 +17,7 @@ jobs:
 
     env:
       # Default release when this runs from a push (no inputs context)
-      RELEASE: release-1
+      RELEASE: ${{ inputs.release || 'release-1' }}
       SUBJECT_ID: ${{ github.run_id }}
 
     steps:
