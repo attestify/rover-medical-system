@@ -33,7 +33,7 @@ Add the below ``nape collect evidence ...``` command after the Release 1 command
 Add the below ``nape collect evidence ...``` commands after the Release 2 command
 
 ```bash
-echo "--- Release 3 - Evidence Collection (Additions) --- "
+          echo "--- Release 3 - Evidence Collection (Additions) --- "
 
           nape collect evidence \
           --control-activity "pet-medicine-host" \
