@@ -91,7 +91,6 @@ jobs:
             --control-activity "pet-medicine-app" \
             --file-path "pet-medicine-app/app-config.toml"
 
-
           nape collect report
 
 
