@@ -1,7 +1,7 @@
 # Rover Medical System
 
 A demonstration of how to apply the Assured Release approach in small slices over time.
-
+ 
 ## Demo Setup
 
 The five steps to set up and do one crank of the demo are as follows:
