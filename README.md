@@ -1,7 +1,7 @@
 # Rover Medical System
 
 A demonstration of how to apply the Assured Release approach in small slices over time.
- 
+
 ## Demo Setup
 
 The five steps to set up and do one crank of the demo are as follows:
@@ -22,7 +22,7 @@ The below directions guide you on how to setup and execute the demo within the G
 4. **NOTE**
     1. There is no need for a username or an access token/password for this repository, as attestify/rover-medical-system is public.
     2. Make sure to select "public" for this new repo you are creating; we do not support this demo with "private" repos.
-5. When import is complete (it can take a few minutes), you'll now have the Rover Medical System repo at: `https://github.com/[your-organization]/rover-medical-system.git
+5. When import is complete (it can take a few minutes), you'll now have the Rover Medical System repo at: `https://github.com/[your-organization]/rover-medical-system.git`
 
 ### 2. Enable GitHub Actions in this new Detached Clone
 
