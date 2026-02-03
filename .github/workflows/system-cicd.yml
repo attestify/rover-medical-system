@@ -87,14 +87,6 @@ jobs:
             --control-activity "pet-medicine-app" \
             --file-path "pet-medicine-app/app-config.toml"
 
-          echo "--- Release 2 - Evidence Collection (Additions) --- "
-
-          nape collect evidence \
-            --control-activity "pet-medicine-db" \
-            --file-path "pet-medicine-db/my-db.ini"
-
-
-
           nape collect report
 
 
